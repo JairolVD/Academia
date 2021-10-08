@@ -41,15 +41,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlumnoSQL.cs" />
-    <Compile Include="ClaseSQL.cs" />
-    <Compile Include="CursoSQL.cs" />
-    <Compile Include="EvaluacionSQL.cs" />
-    <Compile Include="HorarioSQL.cs" />
-    <Compile Include="InscripcionSQL.cs" />
-    <Compile Include="ProductoAcademicoSQL.cs" />
-    <Compile Include="ProfesorSQL.cs" />
+    <Compile Include="AlumnoSQLServer.cs" />
+    <Compile Include="ClaseSQLServer.cs" />
+    <Compile Include="CursoSQLServer.cs" />
+    <Compile Include="EvaluacionSQLServer.cs" />
+    <Compile Include="HorarioSQLServer.cs" />
+    <Compile Include="InscripcionSQLServer.cs" />
+    <Compile Include="ProductoAcademicoSQLServer.cs" />
+    <Compile Include="ProfesorSQLServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio.ModuloInscripcion\Dominio.ModuloInscripcion.csproj">
+      <Project>{13d0085d-61a5-41a4-8bb1-cabfbfab6170}</Project>
+      <Name>Dominio.ModuloInscripcion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Persistencia.SqlServer.ModuloBase\Persistencia.SqlServer.ModuloBase.csproj">
+      <Project>{f8489468-5caf-4546-ad00-e7f1e7376e41}</Project>
+      <Name>Persistencia.SqlServer.ModuloBase</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
